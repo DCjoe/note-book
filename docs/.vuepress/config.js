@@ -19,7 +19,7 @@ const regularSc = require('../regular')
 
 module.exports = {
   title: 'MRCODE-BOOK',
-  description: '用来记录工作和学习过程中的笔记，汇总成册方便查阅，类容涵盖各类技术，如：Java、Git、ElasticSearch、MyCat、设计模式、Gradle、Vue - mrcode.cn',
+  description: '用来记录工作和学习过程中的笔记，汇总成册方便查阅，类容涵盖各类技术',
   base: '/note-book/', // gh-page 中是增加了项目名
   dest: 'build/.vuepress/dist',  // 目录配置在外,纯粹是有代码洁癖和强迫症，并不能规避开发模式下同时构建不报错的问题
   host: 'localhost', // dev 的域名
@@ -45,7 +45,7 @@ module.exports = {
     sidebarDepth: 3, // 嵌套标题侧边栏提取深度，最大为 2，会提取到 h3
     lastUpdated: '上次更新', // string | boolean
     // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
-    repo: 'https://github.com/zq99299/note-book',
+    repo: 'https://github.com/DCjoe/note-book',
     // 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为
     // "GitHub"/"GitLab"/"Bitbucket" 其中之一，或是 "Source"。
     repoLabel: 'GitHub',
@@ -71,7 +71,7 @@ module.exports = {
       // }
     },
     nav: [
-      { text: '博客（零散文章）', link: '/posts/' },
+      // { text: '博客（零散文章）', link: '/posts/' },
       {
         text: '设计模式', items: [
           { text: '设计模式（慕课）', link: '/imocc/design_pattern/' },
@@ -121,9 +121,9 @@ module.exports = {
       {
         text: '更多', items: [
           { text: '本笔记介绍', link: '/introduce/' },
-          { text: 'Linux 基础篇', link: 'https://zq99299.github.io/linux-tutorial/' },
+          // { text: 'Linux 基础篇', link: 'https://zq99299.github.io/linux-tutorial/' },
           { text: 'Spring Cloud', link: '/spring-cloud-tutorial/' },
-          { text: 'CSS 深入理解（张鑫旭）', link: '/css-zxx/' },
+          // { text: 'CSS 深入理解（张鑫旭）', link: '/css-zxx/' },
           { text: '正则入门', link: '/regular/' },
           {
             text: '思路拓展', items: [
@@ -138,20 +138,20 @@ module.exports = {
               { text: 'Git 系统学习笔记', link: '/git-scm/' },
             ]
           },
-          {
-            text: 'Mycat', items: [
-              { text: 'Mycat 1', link: '/mycat/' },
-              { text: 'Mycat 2', link: '/mycat2/' }
-            ]
-          },
-          {
-            text: '笔记精选汇总',
-            items: [
-              { text: 'GitHub 站', link: 'https://github.com/zq99299/repository-summary' },
-              { text: '国内镜像站', link: 'http://book.mrcode.cn/' }
-            ]
-          },
-          { text: '博客文章 /_posts/ 路径失效说明', link: '/posts-failure.md' },
+          // {
+          //   text: 'Mycat', items: [
+          //     { text: 'Mycat 1', link: '/mycat/' },
+          //     { text: 'Mycat 2', link: '/mycat2/' }
+          //   ]
+          // },
+          // {
+          //   text: '笔记精选汇总',
+          //   items: [
+          //     { text: 'GitHub 站', link: 'https://github.com/zq99299/repository-summary' },
+          //     { text: '国内镜像站', link: 'http://book.mrcode.cn/' }
+          //   ]
+          // },
+          // { text: '博客文章 /_posts/ 路径失效说明', link: '/posts-failure.md' },
         ]
       }
       /*
@@ -205,7 +205,7 @@ module.exports = {
       }
     }],
     ['vuepress-plugin-baidu-tongji-analytics', {
-      key: '63b757e8938717e95e7218e8e1341393'
+      key: 'ce82ee08ad6a3ce423948814b98dba82'
     }],
     ['vuepress-plugin-tags'],
     ['vuepress-plugin-baidu-autopush', true]
